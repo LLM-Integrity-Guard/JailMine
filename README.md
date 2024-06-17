@@ -23,4 +23,4 @@ The two datasets that we use in our experiment are presented in [JailMine/datase
 
 ## Usage
 
-To implement JailMine and reproduce our experiment, please follow the [tutorial notebook](https://github.com/yearsago162012/JailMine/blob/main/Tutorial.ipynb). The result of JailMine will be presented in [result.csv](https://github.com/yearsago162012/JailMine/blob/main/result.csv).
+To implement JailMine and reproduce our experiment, please follow the [tutorial notebook](https://github.com/yearsago162012/JailMine/blob/main/Tutorial.ipynb). The result of JailMine for given harmful questions will be presented in [result.csv](https://github.com/yearsago162012/JailMine/blob/main/result.csv).
