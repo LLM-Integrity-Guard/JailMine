@@ -12,6 +12,6 @@ To get started, clone this repository and install the required dependencies:
 
 ```bash
 git clone https://github.com/yearsago162012/JailMine
-cd ledllm
+cd JailMine
 pip install -r requirements.txt
 ```
