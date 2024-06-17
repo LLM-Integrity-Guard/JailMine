@@ -1,0 +1,5 @@
+transformers==4.39.2
+transformer_lens
+sentence_transformers==2.6.1
+sentencepiece
+jaxtyping
