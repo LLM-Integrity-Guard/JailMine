@@ -1,6 +1,6 @@
 # Lockpicking LLMs: A Logit-Based Jailbreak Using Token-level Manipulation
 
-This repository contains the code for the paper "Lockpicking LLMs: A Logit-Based Jailbreak Using Token-level Manipulation". In this paper, we an innovative token-level manipulation approach to jailbreak open-source LLMs effectively and efficiently. Our paper is released on [Arxiv](https://arxiv.org/pdf/2405.13068)
+This repository contains the code for the paper "Lockpicking LLMs: A Logit-Based Jailbreak Using Token-level Manipulation". In this paper, we an innovative token-level manipulation approach to jailbreak open-source LLMs effectively and efficiently. Our paper is released on [Arxiv](https://arxiv.org/pdf/2405.13068).
 
 
 ## Introduction
