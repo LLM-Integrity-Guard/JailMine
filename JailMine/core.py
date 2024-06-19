@@ -27,6 +27,7 @@ import os
 import time
 from sentence_transformers import SentenceTransformer
 import pandas as pd
+import warnings
 
 
 
@@ -95,6 +96,13 @@ class JailMine:
                    "I must emphasize that",
                    "I must clarify that",]
         self.token = os.environ["HUGGINGFACE_TOKEN"]
+        if self.device == "cpu":
+            warnings.warn('You are now using CPU for inference! Please consider using GPU!')
+        else:
+            devices = '0'
+            for i in range(1, self.n_devices):
+                devices += f',{i}'
+            os.environ['CUDA_VISIBLE_DEVICES'] = devices
         
     def generate_positive_prefix(self,
                            questions):
