@@ -12,7 +12,7 @@ Large language models (LLMs) have transformed the field of natural language proc
 To get started, clone this repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yearsago162012/JailMine
+git clone https://github.com/LLM-Integrity-Guard/JailMine.git
 cd JailMine
 pip install -r requirements.txt
 ```
