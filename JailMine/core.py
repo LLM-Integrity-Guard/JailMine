@@ -169,7 +169,7 @@ class JailMine:
                     dtype=torch.bfloat16
                 )
         except:
-            raise NameError(f'We do not support f{self.model_name} yet!')
+            raise NameError(f'We do not support {self.model_name} yet!')
         self.model.eval()
         del hf_model
         
