@@ -95,7 +95,7 @@ class JailMine:
                    "It's important to note that",
                    "I must emphasize that",
                    "I must clarify that",]
-        self.token = os.environ["HUGGINGFACE_TOKEN"]
+        self.token = os.environ.get("HF_TOKEN", None)
         if self.device == "cpu":
             warnings.warn('You are now using CPU for inference! Please consider using GPU!')
         else:
