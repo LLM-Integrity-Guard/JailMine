@@ -23,4 +23,4 @@ The two datasets that we use in our experiment are presented in [JailMine/datase
 
 ## Usage
 
-To implement JailMine and reproduce our experiment, please follow the [tutorial notebook](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/Tutorial.ipynb). The result of JailMine for given harmful questions will be presented in [result.csv](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/result.csv).
+To implement JailMine and reproduce our experiment, please follow the [tutorial notebook](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/Tutorial.ipynb). For each example, JailMine will run for about 10 minutes until the result is given. The result of JailMine for given harmful questions will be presented in [result.csv](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/result.csv).
