@@ -19,8 +19,8 @@ pip install -r requirements.txt
 
 ## Dataset and Models
 
-The two datasets that we use in our experiment are presented in [JailMine/datasets](https://github.com/yearsago162012/JailMine/tree/main/datasets). Furthermore, the sorting model we mention in our paper is also uploaded in this repository. 
+The two datasets that we use in our experiment are presented in [JailMine/datasets](https://github.com/LLM-Integrity-Guard/JailMine/tree/main/datasets). Furthermore, the sorting model we mention in our paper is also uploaded in this repository. 
 
 ## Usage
 
-To implement JailMine and reproduce our experiment, please follow the [tutorial notebook](https://github.com/yearsago162012/JailMine/blob/main/Tutorial.ipynb). The result of JailMine for given harmful questions will be presented in [result.csv](https://github.com/yearsago162012/JailMine/blob/main/result.csv).
+To implement JailMine and reproduce our experiment, please follow the [tutorial notebook](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/Tutorial.ipynb). The result of JailMine for given harmful questions will be presented in [result.csv](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/result.csv).
