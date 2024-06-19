@@ -94,6 +94,7 @@ class JailMine:
                    "It's important to note that",
                    "I must emphasize that",
                    "I must clarify that",]
+        self.token = os.environ["HUGGINGFACE_TOKEN"]
         
     def generate_positive_prefix(self,
                            questions):
@@ -131,9 +132,9 @@ class JailMine:
     
     def LoadModel(self):
         
-        self.tokenizer = AutoTokenizer.from_pretrained(self.target_model_path)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.target_model_path, token = self.token)
         self.tokenizer.pad_token=self.tokenizer.eos_token
-        hf_model = AutoModelForCausalLM.from_pretrained(self.target_model_path)
+        hf_model = AutoModelForCausalLM.from_pretrained(self.target_model_path, token = self.token)
         self.embed_model = SentenceTransformer(self.embedding_model_path ,device=self.device)
         
         try:
@@ -164,12 +165,12 @@ class JailMine:
         self.model.eval()
         del hf_model
         
-        self.judge_tokenizer = AutoTokenizer.from_pretrained(self.judge_model_path)
+        self.judge_tokenizer = AutoTokenizer.from_pretrained(self.judge_model_path, token = self.token)
         self.judge_tokenizer.pad_token = self.judge_tokenizer.eos_token
         if self.n_devices > 1:
-            self.judge_model = AutoModelForCausalLM.from_pretrained(self.judge_model_path, device_map='auto')
+            self.judge_model = AutoModelForCausalLM.from_pretrained(self.judge_model_path, device_map='auto', token = self.token)
         else:
-            self.judge_model = AutoModelForCausalLM.from_pretrained(self.judge_model_path, device_map=self.device)
+            self.judge_model = AutoModelForCausalLM.from_pretrained(self.judge_model_path, device_map=self.device, token = self.token)
         gc.collect()
         
         
