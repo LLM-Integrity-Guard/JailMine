@@ -24,3 +24,13 @@ The two datasets that we use in our experiment are presented in [JailMine/datase
 ## Usage
 
 To implement JailMine and reproduce our experiment, please follow the [tutorial notebook](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/Tutorial.ipynb). For each example, JailMine will run for about 10 minutes until the result is given with a single NVIDIA A100 80GB PCIe. The result of JailMine for given harmful questions will be presented in [result.csv](https://github.com/LLM-Integrity-Guard/JailMine/blob/main/result.csv).
+
+## Reproducibility
+
+To reproduce the result in our paper, please run the following script:
+
+```bash
+HF_TOKEN = <YOUR_HUGGINGFACE_TOKEN> python reproduce.py
+```
+Replace `<YOUR_HUGGINGFACE_TOKEN>` with your actual Huggingface token.
+
