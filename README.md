@@ -45,7 +45,7 @@ The explaination of each parameter is described as follows:
 --JUDGE_PATH     # The local path of the judge model. We recommand Llama-Guard-2-8b as the judge model.
 # Please modify these paths to our own paths
 --device         # The device you want to use when reproducing.
---n_devices      # The number of devices you want to use. If n_devices > 1, "device" will be abandoned.
+--n_devices      # The number of devices you want to use. If --n_devices > 1, --device will be deprecated.
 --question_path  # The local path of the question set.
 --N              # The number of manipulation you want to make. Default is 2000.
 --m              # The length of manipulation after the first k manipulation. Default is 5.
