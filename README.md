@@ -30,7 +30,25 @@ To implement JailMine and reproduce our experiment, please follow the [tutorial 
 To reproduce the result in our paper, please run the following script:
 
 ```bash
-HF_TOKEN = <YOUR_HUGGINGFACE_TOKEN> python reproduce.py
+HF_TOKEN=<YOUR_HUGGINGFACE_TOKEN> python reproduce.py
 ```
 Replace `<YOUR_HUGGINGFACE_TOKEN>` with your actual Huggingface token.
+
+The explaination of each parameter is described as follows:
+
+```
+--MODEL_NAME     # The name of the target model
+--MODEL_PATH     # The local path of the target model
+--REPHRASE_PATH  # The local path of the rephrase model. We recommand Llama-2-7b-chat as the rephrase model.
+--SORTING_PATH   # The local path of the sorting model.
+--EMBED_PATH     # The local path of the embed model. We recommand gtr-t5-xl as the embed model.
+--JUDGE_PATH     # The local path of the judge model. We recommand Llama-Guard-2-8b as the judge model.
+# Please modify these paths to our own paths
+--device         # The device you want to use when reproducing.
+--n_devices      # The number of devices you want to use. If n_devices > 1, "device" will be abandoned.
+--question_path  # The local path of the question set.
+--N              # The number of manipulation you want to make. Default is 2000.
+--m              # The length of manipulation after the first k manipulation. Default is 5.
+--n              # The number of responses to each harmful question. Default is 1.
+```
 
