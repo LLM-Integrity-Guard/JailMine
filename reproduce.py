@@ -6,7 +6,7 @@ import argparse
 
 def get_args():
     parser = argparse.ArgumentParser(description="Configs")
-    parser.add_argument("--MODEL_NAME", type=str, default='mistral-7b')
+    parser.add_argument("--MODEL_NAME", type=str, default='mistral-7b-instruct', choices=["Llama-2-7b-chat", "mistral-7b-instruct", "meta-llama/Meta-Llama-3-8B", "gemma-7b-it"])
     parser.add_argument("--MODEL_PATH", type=str, default=f'/data/yichuan/cyc/llm_model/hub/mistral-7b/snapshots/_')
     parser.add_argument("--REPHRASE_PATH", type=str, default='/data/yichuan/cyc/llm_model/hub/Llama-2-7b-chat-hf/snapshots/_' )
     parser.add_argument("--SORTING_PATH", type=str, default='sorting.pth')
@@ -47,7 +47,7 @@ if __name__ == '__main__':
                               device=args.device, # if n_devices > 1, ignore this parameter
                               n_devices=args.n_devices, # number of devices
                              )
-    miner.run(questions = questions_set,
+    miner.run(questions = questions_set[0:1],
            m=args.m,
            N=args.N,
            n=args.n)
