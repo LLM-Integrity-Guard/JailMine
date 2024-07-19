@@ -37,7 +37,7 @@ Replace `<YOUR_HUGGINGFACE_TOKEN>` with your actual Huggingface token.
 The explaination of each parameter is described as follows:
 
 ```
---MODEL_NAME     # The name of the target model
+--MODEL_NAME     # The name of the target model. Default is mistral-7b-instruct.
 --MODEL_PATH     # The local path of the target model
 --REPHRASE_PATH  # The local path of the rephrase model. We recommand Llama-2-7b-chat as the rephrase model.
 --SORTING_PATH   # The local path of the sorting model.
