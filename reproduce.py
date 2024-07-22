@@ -47,7 +47,7 @@ if __name__ == '__main__':
                               device=args.device, # if n_devices > 1, ignore this parameter
                               n_devices=args.n_devices, # number of devices
                              )
-    miner.run(questions = questions_set[0:1],
+    miner.run(questions = questions_set,
            m=args.m,
            N=args.N,
            n=args.n)
